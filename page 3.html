@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Intérieurs du bâtiment</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+		
+	<!--TITRES-->
+		
+	<h1>Projet de diplôme DNMADE</h1>
+
+		<h2>Océane Autef</h2>
+		
+
+	<!--MENU DÉROULANT-->
+	
+	<nav id="menu">
+    	<ul>
+
+        <!--SOUS-MENU 1-->
+        	<li>
+            	<span><a href="index.html">Contexte et analyse</a></span>
+        	</li>
+
+        <!--SOUS-MENU 2-->
+        	<li>
+				<span><a href="page 2.html">Extérieurs du site</a></span>
+        	</li>
+
+        <!--SOUS-MENU 3-->
+        	<li>
+            	<span class="menuactuel">Intérieurs du bâtiment</span>
+            		<ul>
+                		<li data-target="#Soussol">Sous-sol</li>
+                		<li data-target="#Rezdechaussee">Rez-de-chaussée</li>
+                		<li data-target="#1eretage">1er étage</li>
+                		<li data-target="#Combles">2ème étage – combles</li>
+            		</ul>
+        	</li>
+			
+    	</ul>
+	</nav>
+
+		<img class="imgfacadeavant" src="images/d3fd2804-e824-47a0-9e87-ba369d925d33_original.jpg" alt="Façade avant">
+		
+		
+	<!--CONTENU DE LA PAGE-->
+
+	<section class="Groupe" id="Soussol">
+    	
+		<h3 class="premierh3">1 - Sous-sol</h3>
+		
+				<p>Cet espace, de par sa nature semi-enterrée et sa lumière tamisée, crée une ambiance plus intime. Ce type d'atmosphère convient bien à une salle de jeux, qui ne requiert pas nécessairement la luminosité et la sensation d'ouverture attendues dans des espaces plus calmes ou formels. Aussi, l'ancienne cuisine du réfectoire du centre de loisirs a gardé sa fonction mais cette fois-ci, pour animer des ateliers de cuisine. De plus, afin de respecter l'accessibilité PMR, j'ai intégré un élévateur au niveau de la porte reliant le sous-sol à l'extérieur ; cela évite aux personnes à mobilité réduite de prendre l'ascenseur et de faire un très grand détour.</p>
+		
+				<p>Pour ce qui concerne l'ambiance générale, la mairie a sélectionné une atmosphère très vive et colorée, permettant de contraster avec le reste du bâtiment. Cela apporte une dimension plus moderne et actuelle du patrimoine ; en effet, celui-ci n'est pas figé et évolue dans le temps.</p>
+	
+				<div class="blocvisuels1">
+   					<img src="images/Image50.jpg" alt="Visuels Sous-sol" class="image-slider" data-key="visuelsoussol">
+	
+					<img src="images/Image56.jpg" alt="Visuels Cuisine" class="image-slider" data-key="visuelcuisine">
+				</div>
+	</section>
+	
+		
+	<section class="Groupe" id="Rezdechaussee">
+    
+		<h3>2 – Rez-de-chaussée</h3>
+
+    			<p>Lieu de passage intense, il favorise les échanges et la convivialité. Il accueille donc un espace de détente où l'on peut discuter et de se retrouver. pour préserver la tranquilité de la salle d'exposition et de projection, des parois transparentes et coulissantes à isolation phonique ont été installées permettant ainsi de contenir le bruit tout en gardant une ouverture visuelle.</p>
+	
+				<p>Dans l'entrée principale où se trouve les escaliers, j'ai placé un ascenseur afin de garantir l'accessibilité PMR pour chaque niveau du bâtiment. Celui-ci est de forme circulaire afin d'épouser la forme des escaliers et transparent et chrome, ce qui permet de minimiser son impact visuel.</p>
+
+    			<img src="images/Image64.jpg" alt="Visuels Rez-de-chaussée" class="image-slider" data-key="visuelrezdechausee">
+	</section>
+
+	
+	<section class="Groupe" id="1eretage">
+    	
+		<h3>3 – 1er étage</h3>
+	
+				<p>Cet étage, comportant un certain nombre de pièces fermées, me paraissait idéal à la location. Au nombre de trois, elles sont dédiées à des associations (ou autre) pouvant être intéressées afin d'animer des ateliers et cours. De plus, cela permettrait à la commune d'assurer des rentrées d'argent permettant de s'occuper et d'entretenir le site.</p>
+
+    			<img src="images/Image82.jpg" alt="Visuels 1er étage" class="image-slider" data-key="visueletage1">
+	</section>
+	
+
+	<section class="Groupe" id="Combles">
+    	
+		<h3>4 – 2ème étage – combles</h3>
+				
+				<p>Situé au dernier étage du bâtiment, cet étage bénéficie d'un isolement naturel, idéal pour la concentration. Il accueille des espaces de coworking dans la salle principale, une zone de travail individeul dans une salle isolée, ainsi qu'une salle de pause. Calme et en retrait, il offre un environnement propice à la réflexion et à la productivité.</p>
+		
+				<div class="blocvisuels2">
+   					<img src="images/Image83.jpg" alt="Visuels Coworking" class="image-slider" data-key="visueletage2">
+	
+					<img src="images/Image98.jpg" alt="Visuels Salle d'étude" class="image-slider" data-key="visueletage2bis">
+				</div>
+	</section>
+	
+		
+	<!--FENETRE D'AFFICHAGE DES IMAGES-->
+	
+	<div id="slider">
+    	<a class="prec" onclick="precSlider()">&#10094;</a>
+    		<div class="photos">
+        		<img id="sliderImage" src="images/Image1.jpg" alt="Image slider">
+    		</div>
+    	<a class="suiv" onclick="suivSlider()">&#10095;</a>
+	</div>
+	
+	
+	<!--LIEN JAVASCRIPT-->
+	
+	<script src="Javascript.js"></script>
+	
+</body>
+</html>
